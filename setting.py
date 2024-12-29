@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import subprocess
 
-subprocess.run(["cd"],text=True)
 #hostname
 subprocess.run(["hostnamectl","set-hostname","ubuntu"],text=True)
 
