@@ -1,0 +1,11 @@
+network:
+    ethernets:
+        ens2:
+            dhcp4: true
+            match:
+                macaddress: 52:54:00:1c:a2:fe
+            set-name: ens2
+        ens3:
+            addresses:
+              - 192.168.0.2/30
+    version: 2
