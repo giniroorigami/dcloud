@@ -91,7 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='ls -l --color=auto'
+alias lsl='ls -l --color=auto'
 alias ip='ip -c -br'
 
 # Add an "alert" alias for long running commands.  Use like so:
