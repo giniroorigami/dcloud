@@ -23,7 +23,7 @@ def alias():
 
 if __name__=="__main__":
   subprocess.run(hostname("ubuntu"),text=True) #ホスト名設定
-  subprocess.run(update(),text=True)　#データベースアップデート
+  subprocess.run(update(),text=True)　#ローカルリポジトリアップデート
   subprocess.run(install("bind9"),text=True) #bindの追加
   subprocess.run(install("nmap"),text=True) #nmapの追加
   subprocess.run(network(),shell=True,text=True) #netplan設定の移設
