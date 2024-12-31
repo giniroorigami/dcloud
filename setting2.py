@@ -21,6 +21,11 @@ def network():
 def alias():
   return "mv /root/dcloud/.bashrc ~/.bashrc"
 
+#rebot
+print("#######設定完了しました。再起動します########")
+def reboot():
+  return "reboot"
+
 if __name__=="__main__":
   subprocess.run(hostname("ubuntu"),text=True) #ホスト名設定
   subprocess.run(update(),text=True) #ローカルリポジトリアップデート
@@ -28,3 +33,4 @@ if __name__=="__main__":
   subprocess.run(install("nmap"),text=True) #nmapの追加
   subprocess.run(network(),shell=True,text=True) #netplan設定の移設
   subprocess.run(alias(),shell=True,text=True) #.bashrcの移設
+  subprocess.run(reboot(),text=True)
